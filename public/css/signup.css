@@ -1,0 +1,154 @@
+ /* styling for the form part 
+ 
+ */
+
+ .formheading{
+    font-family: 'Braah One', sans-serif;
+    font-weight: 400;
+    
+   }
+   .gendiv{
+    color: black;
+   }
+  
+   
+   .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+  
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+  
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+  
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+  
+   
+  
+  .form-signin {
+   
+    padding: 15px;
+  }
+  
+  .form-signin .form-floating:focus-within {
+    z-index: 2;
+  }
+  
+  .top{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .middle{
+    margin-bottom: -1px;
+    border-radius: 0;
+  }
+  .bottom {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+  
+  /* positioning of the formsec  */
+  
+  .formsec{
+    position: absolute;
+    z-index: 999;
+    height: 100%;
+    backdrop-filter: blur(23px)saturate(0.7);
+    text-align: center !important;
+
+  }
+  
+  
+  /* styling of genderdiv  */
+  
+  .gendiv{
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 10px;
+      margin-left: 7px;
+      justify-content: space-evenly;
+    }
+    
+    label {
+      margin-right: 12px;
+      line-height: 32px;
+    }
+    
+    input {
+      appearance: none;
+    
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+    
+      border: 2px solid #999;
+      transition: 0.2s all linear;
+      margin-right: 5px;
+    
+      position: relative;
+      top: 4px;
+      text-align: center !important;
+    }
+    
+    input:checked {
+      border: 6px solid #1038ff;;
+    }
+  
+    ::-webkit-input-placeholder {
+      text-align: center !important;
+    }
+    
+    :-moz-placeholder {
+      text-align: center !important;
+    }
+    
+    
+    legend{
+      color: black;
+      background-color: black;
+      padding: 5px 10px;
+      border-radius: 0;
+      border: 0;
+      font-size: 14px;
+    }
+  
+  
+    .form-signin{
+  max-width: 350px !important;
+  
+    }
+  
+    .form-floating>label {
+  
+      left:36%
+    }
+  .doblbl{
+      left:25% !important 
+  }
+  
+  

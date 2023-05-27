@@ -1,0 +1,208 @@
+    /* style of navbar  */
+
+    .nav_head{
+        background-color: #02003ddb;
+          /* fixing navbar to top when it reaches o px from top  */
+          position: sticky;
+          top: -1px;
+          z-index: 9999;
+          
+        }
+        /* background fo nav  */
+        .navbar{
+           color: rgb(255, 255, 255);
+           text-shadow: 0px 2px 5px black;
+           
+        }
+        
+        /* anchor tags of nav  */
+    
+        .navbar a{
+          color: white;
+          font-size: 1.4rem;
+          font-family: 'Play', sans-serif;
+        }
+        .navbar a:hover{
+       color: var(--main-color) !important;
+       text-shadow: 1px 1px 1px black;
+       font-weight: 600;
+       }
+       /* targeting active navbar item  */
+    
+       .navbar a.active {
+          color: var(--main-color)!important;
+          text-shadow: 2px 0px 1px black;
+      }
+    
+    
+       .nav-item{
+          /* box-shadow: inset 0.1em 0.1em 0.7em #282727; */
+       }
+        .nav-brick{
+          width: 1.6em;
+          height: 1.6em;
+          background-image: url('../images/attendtoggler.svg');
+        }
+    
+        /* giving spaces between li of nav element 
+         */
+        .navbar li {
+          margin-left:2rem;
+         }
+    
+         /* style of logo  */
+         /* styling og logo  */
+  .botcircle {
+    height: 81px;
+    width: 80px;
+    position: absolute;
+    background: #f2f5f2eb;
+    border-radius: 50%;
+    top: 12%;
+  }
+  
+  .logoimg {
+    width: 80px;
+    margin-right: 5px;
+    position: relative;
+    top: 0%;
+    left: 0.2%;
+  }
+  
+  .botcircle:hover {
+    background-color: #eeefeeeb;
+    /* filter: drop-shadow(7px 4px 5px rgb(243, 152, 68));   */
+  }
+  /* media query for logo  */
+  
+  @media (max-width:426px){
+    .botcircle{
+      height: 69px;
+      width: 69px;
+      position: absolute;
+      background: #f2f5f2eb;
+      border-radius: 50%;
+      top: 39%;
+  }
+    .logoimg{
+        width: 70px;
+        margin-right: 5px;
+        position: relative;
+        top: -2%;
+        left: -0.5%;
+    }
+  }
+
+  
+
+  .dropdown-menu{
+  background-color: #262458 !important;
+}
+  /* navbar ends  */
+
+
+
+.calcdiv{
+   
+    height: 100vh;
+    padding: 1.6%;
+}
+.datadiv{
+    height: 100vh;
+   
+}
+.title{
+    font-size: 43px!important;
+}
+.title,.subtitle{
+    /* color: white; */
+    font-family: 'Play', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* styling for the calculator body part  */
+.calcbody{
+    background-color: rgb(74, 70, 70);
+    position: relative;
+    width: 70%;
+    height: 70%;
+    display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 5px;
+    
+}
+.inpbox{
+    background-color: rgb(88 80 82);
+    color: white;
+    text-align: end;
+    position: relative;
+    width: 100%;
+    height: 15%;
+    font-weight: 500;
+    padding-right: 7px;
+    font-family: 'Play', sans-serif;
+    font-size: 43px;
+    font-weight: 700;
+
+}
+.calbtn{
+    background-color: rgb(132 126 126);
+    color: white;
+    font-family: 'Play', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    width: calc(25% - 2px);
+    height: calc(17% - 2px);
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px 2px 0 0;
+}
+.vertbtn{
+    background-color: rgb(255 159 11);
+}
+.horbtn{
+    background-color: rgb(106 99 100);
+}
+.zerobtn{
+    width: calc(50% - 2px);
+}
+
+#calcname{
+   
+    width: 35%;
+    margin-right: 7px;
+    border: 1px solid gray;
+}
+.calcnamediv{
+    margin: 2% 0;
+    
+    
+}
+/* save name part  */
+.savenamebox{
+    display: flex;
+
+}
+.savebtn{
+    padding: 0 5%;
+}
+
+/* styling of caldata  */
+
+.datadiv{
+  border-bottom: 2px solid grey;
+  padding: 10px;
+}
+.datarow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+.column {
+  flex: 1;
+}

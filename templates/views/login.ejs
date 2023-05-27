@@ -1,0 +1,59 @@
+<!-- including header and nav  -->
+
+<%- include("partials/header"); -%>
+
+<!-- including navbar -->
+
+<%- include("partials/nav"); -%>
+<!-- Linking own stylesheet  -->
+<link rel="stylesheet" href="css/signup.css">
+<link rel="stylesheet" href="css/login.css">
+
+<!-- form part starts  -->
+
+
+<div class="container-fluid formsec loginform">
+    <div class="row">
+    
+    <div class="col-md-10 col-12 mx-auto">
+    
+        <main class="form-signin w-100 m-auto">
+            <form action="/login" method="post" class="lgnform">
+              <img class="mb-4 formicon" src="images/calclogo.png" alt="" width="72" height="57">
+              <h1 class="h3 mb-3 fw-normal formheading">Track your Calculations</h1>
+              <!-- alertbox for invalid id or password or error  -->
+              <div class="alertbox"><h3 class="alertmsg" style=<%= alboxStyle %>  > <%= alrtmsg %></h3></div>
+
+              <div class="form-floating">
+                <input type="email"name="email" class="form-control top" id="floatingemail" placeholder="Email address"required>
+                <label for="floatingemail">E-mail</label>
+              </div>
+    
+              <div class="form-floating">
+                <input type="password"name="password" class="form-control bottom" id="floatingPassword" placeholder="Password"required>
+                <label for="floatingPassword">Password</label>
+              </div>
+          
+              
+              <button class="w-100 btn btn-lg btn-primary logbtn" type="submit">Login</button>
+              <a href="https://www.instagram.com/real2reel_art/?hl=en" style="text-decoration:none;" class="copyright"><p class="mt-5 mb-3 ">&copy; real2reel_art</p></a>
+            </form>
+          </main>
+    
+    
+    
+    
+    
+    </div></div>
+    
+    
+    
+    
+    
+    
+    </div>
+    
+  </body>
+  </html>
+
+    

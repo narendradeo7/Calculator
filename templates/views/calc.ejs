@@ -1,0 +1,113 @@
+<!-- including header and nav  -->
+
+    <%- include("partials/header"); -%>
+
+
+<!-- including navbar -->
+
+<%- include("partials/nav"); -%>
+
+
+    <div class="container-fluid bodyspace">
+
+        <div class="row">
+     
+         <!-- we are making col to align content having a col space from left and right  -->
+         <div class="col-md-10 col-12 mx-auto">
+
+    <!-- segmenting body  -->
+    <div class="container-fluid bckg">
+        <div class="row">
+            <!-- for the calculator part -->
+            <div class="col-md-6 mx-auto calcdiv">
+                <h1 class="title">Calculator</h1>
+                <div class="calcbody">
+<div class="inpbox"></div>
+
+<div class="calbtn horbtn">AC</div>
+<div class="calbtn horbtn">+/-</div>
+<div class="calbtn horbtn">%</div>
+<div class="calbtn vertbtn">÷</div>
+<div class="calbtn">7</div>
+<div class="calbtn">8</div>
+<div class="calbtn">9</div>
+<div class="calbtn vertbtn">×</div>
+<div class="calbtn">4</div>
+<div class="calbtn">5</div>
+<div class="calbtn">6</div>
+<div class="calbtn vertbtn">-</div>
+<div class="calbtn">1</div>
+<div class="calbtn">2</div>
+<div class="calbtn">3</div>
+<div class="calbtn vertbtn">+</div>
+<div class="calbtn zerobtn">0</div>
+<div class="calbtn">.</div>
+<div class="calbtn vertbtn">=</div>
+
+
+
+                </div>
+                <div class="calcnamediv">
+
+                    <label for="calcnam" class="required form-label subtitle">Calculation Name</label>
+                    <div class="savenamebox">
+                    <input type="text" class="form-control"name="calcname" id="calcname" placeholder="Enter Name ">
+                    <button type="submit" id=" " name="savebtn" class="btn btn-primary savebtn">Save</button>
+                </div>
+                </div>
+            </div>
+
+
+
+            <!-- for the data part  -->
+            <div class="col-md-6 mx-auto datadiv">
+                <div class="dataprev">
+                  <h1 class="title">Calculations</h1>
+                  <div class="row datarow">
+                    <div class="column"></div>
+                    <div class="column"><strong>Name</strong></div>
+                    <div class="column"><strong>Calculation</strong></div>
+                    <div class="column"><strong>Result</strong></div>
+                    <div class="column"></div>
+                  </div>
+                  <% calculations.forEach(function(calculation) { %>
+                    <div class="row datarow">
+                      <div class="column"><input type="checkbox"></div>
+                      <div class="column"><%= calculation.calname %></div>
+                      <div class="column"><%= calculation.expression %></div>
+                      <div class="column"><%= calculation.result %></div>
+                      <div class="column"></div>
+                    </div>
+                    <br>
+                  <% }) %>
+                </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+</div>
+ 
+ 
+</div>
+</div>
+
+<!-- passing loggedIn -->
+<script>
+    const loggedIn = <%= loggedIn %>;
+  </script>
+    <!-- linking script  -->
+    <script src="js/main.js" type="text/javascript"></script>
+    <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
